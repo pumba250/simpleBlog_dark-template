@@ -112,7 +112,7 @@
                 <button class="w3-button w3-teal w3-disabled w3-padding-large w3-margin-bottom">След. &raquo;</button>
             <?php endif; ?>
         </div>
-  <p align="center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-text-teal">w3.css</a> Copyright &copy; <?php echo date("Y");?> by <b><?php echo $_SERVER['SERVER_NAME'];?></b><br>
+  <p align="center">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-text-teal">w3.css</a> &copy; <?= date("Y") ?> <?= htmlspecialchars($_SERVER['SERVER_NAME']) ?>. Powered by <?= $powered ?>_<?= $version ?>. Все права защищены.</b><br>
 
   </p>
 </footer>
