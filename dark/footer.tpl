@@ -9,9 +9,9 @@
   <?php if ($user): ?><img src="<?= htmlspecialchars($user['avatar']);?>" style="width:120px"><?php endif; ?>
     <div class="w3-container w3-dark-grey"><?php flash(); ?>
       <?php if ($user): ?>
-      <p><form class="mt-5" method="post" action="/admin/do_logout.php"></p>
+      <p><form class="mt-5" method="post" action="/admin.php?logout"></p>
         <p>Привет, <?= htmlspecialchars($user['username']) ?>!<button type="submit" class="w3-button w3-teal">Выйти</button></form></p>
-        <?php if ($user['isadmin']=='9'): ?><p><a href="/admin/" class="w3-text-teal">Admin Panel</a></p><?php endif; ?>
+        <?php if ($user['isadmin']=='9'): ?><p><a href="/admin.php" class="w3-text-teal">Admin Panel</a></p><?php endif; ?>
     <?php else: ?>
         <p><button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-teal w3-large">Login</button></p>
 
